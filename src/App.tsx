@@ -6,8 +6,10 @@ import { Map } from './components/Map/Map';
 export const App = () => {
     return (
         <>
-            <Header/>
-            <Map/>
+            <div className="wrapper">
+                <Header/>
+                <Map/>
+            </div>
         </>
     );
 };
