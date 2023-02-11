@@ -1,15 +1,20 @@
-import React from 'react';
+import React, {useState} from 'react';
 import './App.css';
-import { Header } from './components/layout/Header';
-import { Map } from './components/Map/Map';
+import {Header} from './components/layout/Header';
+import {Map} from './components/Map/Map';
+import { SearchContext } from './contexts/search.context';
 
 export const App = () => {
+    const [search, setSearch] = useState('');
+
     return (
         <>
-            <div className="wrapper">
-                <Header/>
-                <Map/>
-            </div>
+            <SearchContext.Provider value={{search, setSearch}}>
+                <div className="wrapper">
+                    <Header/>
+                    <Map/>
+                </div>
+            </SearchContext.Provider>
         </>
     );
 };
