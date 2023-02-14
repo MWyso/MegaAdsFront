@@ -1,12 +1,12 @@
+
 button, .btn {
     border: 0;
-    background-color: #2A913E;
-    color: white;
+    background: #2A913E;
     text-transform: uppercase;
-    font-weight: bold;
-    font-size: 0.9rem;
-    padding: 1px 25px;
-    border-radius: 2px;
-    line-height: 22px;
     text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 1rem;
+    padding: 0.28rem 3rem;
+    border-radius: 1.5px;
 }
