@@ -1,13 +1,13 @@
 import React, {useContext, useEffect, useState} from 'react';
 import {MapContainer, Marker, Popup, TileLayer} from 'react-leaflet';
-import '../../utils/fix-map-icon'
-import {SearchContext} from "../../contexts/search.context";
+import '../utils/fix-map-icon'
+import {SearchContext} from "../contexts/search.context";
 import {SimpleAdEntity} from 'types';
-import {apiUrl} from "../../config/api";
+import {apiUrl} from "../config/api";
 
 import 'leaflet/dist/leaflet.css';
-import './Map.css';
 import {SingleAd} from "./SingleAd";
+import styled from "styled-components";
 
 export const Map = () => {
     const {search} = useContext(SearchContext);
@@ -25,9 +25,8 @@ export const Map = () => {
     }, [search]);
 
     return (
-        <>
-            <h1>Search for: {search}</h1>
-            <MapContainer center={[9, 9]} zoom={13}>
+        <MapWrapper>
+            <MapContainer center={[49.9511539, 18.592575]} zoom={13}>
                 <TileLayer
                     url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
                     attribution="&copy; <a href='https://openstreetmap.org/copyright'>OpenStreetMap</a> & contributors"
@@ -42,6 +41,16 @@ export const Map = () => {
                     ))
                 }
             </MapContainer>
-        </>
+        </MapWrapper>
     );
 };
+
+const MapWrapper = styled.div`
+  height: calc(100vh - 3.1rem);
+  width: 100%;
+  background-color: ${(props) => props.theme.colors.blue};
+
+  .leaflet-container {
+    height: 100%
+  }
+`;
