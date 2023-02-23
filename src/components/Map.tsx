@@ -26,7 +26,7 @@ export const Map = () => {
 
     return (
         <MapWrapper>
-            <MapContainer center={[49.9511539, 18.592575]} zoom={13}>
+            <MapContainer center={[52.2330269,20.7810075]} zoom={6}>
                 <TileLayer
                     url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
                     attribution="&copy; <a href='https://openstreetmap.org/copyright'>OpenStreetMap</a> & contributors"

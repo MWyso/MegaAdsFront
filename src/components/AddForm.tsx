@@ -109,12 +109,13 @@ export const AddForm = () => {
                 </p>
                 <p>
                     <label>
-                        Adres URL: <br/>
+                        Adres www ogłoszenia: <br/>
                         <input
                             type="url"
                             name="url"
                             maxLength={99}
                             value={form.url}
+                            placeholder="https://www.olx.pl"
                             onChange={e => updateForm('url', e.target.value)}
                         />
                     </label>
@@ -127,6 +128,7 @@ export const AddForm = () => {
                             name="address"
                             required
                             value={form.address}
+                            placeholder="Zielona 38, Jastrzębie-Zdrój"
                             onChange={e => updateForm('address', e.target.value)}
                         />
                     </label>
