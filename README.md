@@ -63,6 +63,6 @@ Use script from package.json
 
 ## Screen
 
-![aplication](/src//assets/images/ads1.PNG "aplication")
-![aplication](/src//assets/images/ads3.PNG "aplication")
-![aplication](/src//assets/images/ads2.PNG "aplication")
+![aplication](/src//assets/images/ads1.JPG "aplication")
+![aplication](/src//assets/images/ads3.JPG "aplication")
+![aplication](/src//assets/images/ads2.JPG "aplication")
