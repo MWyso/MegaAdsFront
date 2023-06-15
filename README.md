@@ -25,7 +25,7 @@ The goal of this application is to provide a user-friendly platform for selling 
 **Frontend** is created with:
 * React.js
 * Typescript
-* mySQL 
+* mySQL  
 
 ### Setup
 
