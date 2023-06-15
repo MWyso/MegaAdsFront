@@ -27,7 +27,7 @@ The goal of this application is to provide a user-friendly platform for selling 
 * Typescript
 * mySQL  
 
-### Setup
+## Setup
 
 ### Step 1
 ``
