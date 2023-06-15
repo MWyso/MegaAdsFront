@@ -48,9 +48,18 @@ In the **tsconfig.paths.json** file
   }
 }
 ````
+
 Add the path location to the **/types** file from the MegaAdsBack.
 <br>
 ***"../mega-ads-back/types"***
+
+### Step3
+Use script from package.json
+<br>
+````
+ "scripts": {
+    "start": "react-app-rewired start",
+````
 
 ## Screen
 
